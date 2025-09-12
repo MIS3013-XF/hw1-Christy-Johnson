@@ -22,14 +22,14 @@ namespace HW1a_Sales
 
          
 
-            const double multiplier = 0.085;
+            const double taxrate = 0.085;
 
    
             
             Console.WriteLine("What is the product of the item you are purchasing? ");
             string num1AsString = Console.ReadLine();
 
-            Console.WriteLine("How many Football Ticket's do you want to buy? ");
+            Console.WriteLine("How many Football Tickets do you want to buy? ");
             int num2AsString = Convert.ToInt32(Console.ReadLine());
             
             Console.WriteLine("What is the price for each Football Ticket? ");
@@ -41,15 +41,15 @@ namespace HW1a_Sales
 
             double subtotal = num2 * num3;
 
-            Console.WriteLine("Your subtotal for your bill is " + subtotal);
+            Console.WriteLine($"Your subtotal for your bill is ${subtotal:F2}");
 
-            double salesTax = subtotal * multiplier;
-
-            Console.WriteLine("Your sales tax for your bill is " + salesTax);
+            double salesTax = subtotal * taxrate;
+            
+            Console.WriteLine($"Your sales tax for your bill is ${salesTax:F2}");
 
             double total = subtotal + salesTax;
 
-            Console.WriteLine("Your total for your bill is " + total);
+            Console.WriteLine($"Your total for your bill is ${total:F2}");
 
             Console.WriteLine("Press any key to continue...");
 

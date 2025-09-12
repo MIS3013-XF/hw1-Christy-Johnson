@@ -1,7 +1,7 @@
 ﻿// HW1b Grade
 
 // Your Name: Christy Johnson
-// Did you seek help ? If yes, specify the helper or web link here: 
+// Did you seek help ? If yes, specify the helper or web link here: no, I used slides and practice codes.
 
 using System;
 using System.Collections.Generic;
@@ -45,7 +45,7 @@ namespace HW1b_Grade
             double exam2grade = Convert.ToDouble(Console.ReadLine());
 
 
-            Console.WriteLine("What is your overall percentage grade for the Exam3? ");
+            Console.WriteLine("What is your overall percentage grade for the Exam 3? ");
             double exam3grade = Convert.ToDouble(Console.ReadLine());
 
             double FinalGrade = (homeworkgrade * homework_weight) +
